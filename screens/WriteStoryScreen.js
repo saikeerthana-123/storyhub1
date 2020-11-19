@@ -11,6 +11,10 @@ export default class WriteScreen extends React.Component {
           <TextInput style={styles.inputBox} />
           <p>Write Your Story</p>
           <TextInput style={styles.inputBox} />
+          <TouchableOpacity 
+              style={styles.scanButton}>
+              <Text style={styles.buttonText}>Submit</Text>
+           </TouchableOpacity>
         </View>
       );
     }
@@ -25,5 +29,10 @@ export default class WriteScreen extends React.Component {
       borderWidth: 2,
       outline: 'none',
     } ,
+       scanButton:{
+      backgroundColor:'#EDC0BF',
+      width: 50,
+      borderWidth:1.5,
+     }
   })
   
